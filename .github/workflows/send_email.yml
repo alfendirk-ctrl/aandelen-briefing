@@ -1,12 +1,7 @@
 name: Verstuur Aandelen Briefing
 
 on:
-  push:
-    paths:
-      - "email_final.html"   # triggert zodra de routine email_final.html pusht
-  schedule:
-    - cron: "15 8 * * 1"    # elke maandag 08:15 UTC
-  workflow_dispatch:         # handmatig triggeren voor testen
+  workflow_dispatch:         # handmatig triggeren indien gewenst
 
 jobs:
   send-email:
